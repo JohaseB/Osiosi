@@ -1,26 +1,75 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 27, in script
-    $ cash += 10
-  File "game/script.rpy", line 27, in <module>
-    $ cash += 10
-NameError: name 'cash' is not defined
+  File "game/script.rpy", line 19, in script call
+    call hotelRoom
+  File "game/scripts/hotelRoom.rpy", line 9, in script
+    pause
+  File "renpy/common/000statements.rpy", line 416, in execute_pause
+    renpy.pause()
+  File "game/scripts/mobile.rpy", line 9, in execute
+    screen displayShowMobile():
+  File "game/scripts/mobile.rpy", line 9, in execute
+    screen displayShowMobile():
+  File "game/scripts/mobile.rpy", line 10, in execute
+    imagemap:
+  File "game/scripts/mobile.rpy", line 12, in execute
+    hotspot(668, 457, 90, 68) action renpy.hide_screen()
+  File "game/scripts/mobile.rpy", line 12, in keywords
+    hotspot(668, 457, 90, 68) action renpy.hide_screen()
+TypeError: hide_screen() takes at least 1 argument (0 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 27, in script
-    $ cash += 10
-  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script.rpy", line 27, in <module>
-    $ cash += 10
-NameError: name 'cash' is not defined
+  File "game/script.rpy", line 19, in script call
+    call hotelRoom
+  File "game/scripts/hotelRoom.rpy", line 9, in script
+    pause
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 1949, in execute
+    self.call("execute")
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\ast.py", line 1937, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\statements.py", line 277, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 416, in execute_pause
+    renpy.pause()
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\exports.py", line 1480, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\screen.py", line 430, in visit_all
+    callback(self)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\screen.py", line 440, in per_interact
+    self.update()
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/scripts/mobile.rpy", line 9, in execute
+    screen displayShowMobile():
+  File "game/scripts/mobile.rpy", line 9, in execute
+    screen displayShowMobile():
+  File "game/scripts/mobile.rpy", line 10, in execute
+    imagemap:
+  File "game/scripts/mobile.rpy", line 12, in execute
+    hotspot(668, 457, 90, 68) action renpy.hide_screen()
+  File "game/scripts/mobile.rpy", line 12, in keywords
+    hotspot(668, 457, 90, 68) action renpy.hide_screen()
+  File "<screen language>", line 12, in <module>
+TypeError: hide_screen() takes at least 1 argument (0 given)
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TimeNMoney 1.0
-Sun Oct 04 11:52:33 2020
+Mon Oct 19 19:45:23 2020

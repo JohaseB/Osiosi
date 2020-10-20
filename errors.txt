@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 28: expected statement.
-    "Has  ganado diez monedas!":
-                               ^
+File "game/scripts/mobile.rpy", line 12: u'hide' is not a keyword argument or valid child for the hotspot statement.
+    hotspot(668, 457, 90, 68) action hide screen
+                                         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Oct 04 11:51:18 2020
+Mon Oct 19 19:41:56 2020
