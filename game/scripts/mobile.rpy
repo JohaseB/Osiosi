@@ -8,5 +8,6 @@ screen mobile():
 
 screen displayShowMobile():
     imagemap:
-        idle "sylvie_screen"
-        hotspot(668, 457, 90, 68) action renpy.hide_screen("displayShowMobile")
+        idle "mobile_iscreen"
+        hover "mobile_hscreen"
+        hotspot(592, 614, 96, 35) action Hide("displayShowMobile")
