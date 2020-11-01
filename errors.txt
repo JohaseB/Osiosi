@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/mobile.rpy", line 12: u'hide' is not a keyword argument or valid child for the hotspot statement.
-    hotspot(592, 614, 96, 35) action hide "displayShowMobile"
-                                         ^
+File "game/scripts/mobile.rpy", line 13: u'Hide' is not a keyword argument or valid child for the hotspot statement.
+    hotspot(592, 614, 96, 35) Hide("displayShowMobile")
+                                  ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Oct 28 19:51:48 2020
+Sun Nov 01 11:11:42 2020

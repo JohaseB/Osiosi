@@ -4,6 +4,6 @@ label hotelRoom:
     show sylvie green normal
     with dissolve
     s"This place is so chimba, parce-kun"
-
+    window hide
     while True:
         pause

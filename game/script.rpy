@@ -15,5 +15,4 @@ label start:
     show screen buttonMapGo()
     show screen mobile()
 
-
     call hotelRoom
