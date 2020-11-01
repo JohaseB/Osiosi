@@ -6,6 +6,10 @@ define dayTime = ["morning","afternoon","evening","night"]
 define actualTime = 4
 define actualDay = 7
 define displayTextTime = ""
+define strength = 8
+define dexterity = 0
+define intellect = 0
+define charisma = 0
 
 label nextDay:
     $ actualTime += 1

@@ -17,3 +17,31 @@ screen screenStats():
             idle "stats_idle"
             hover "stats_hover"
             hotspot(588, 611, 102, 41) action Hide("screenStats")
+            bar:
+                value strength
+                range 15
+                left_bar "full_bar"
+                right_bar "empty_bar"
+                xysize(300,70)
+                align(0.575, 0.164)
+            bar:
+                value intellect
+                range 15
+                left_bar "full_bar"
+                right_bar "empty_bar"
+                xysize(300,70)
+                align(0.575, 0.364)
+            bar:
+                value dexterity
+                range 15
+                left_bar "full_bar"
+                right_bar "empty_bar"
+                xysize(300,70)
+                align(0.575, 0.564)
+            bar:
+                value charisma
+                range 15
+                left_bar "full_bar"
+                right_bar "empty_bar"
+                xysize(300,70)
+                align(0.575, 0.764)

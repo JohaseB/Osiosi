@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 19, in script call
+  File "game/script.rpy", line 18, in script call
     call hotelRoom
   File "game/scripts/hotelRoom.rpy", line 9, in script
     pause
   File "renpy/common/000statements.rpy", line 416, in execute_pause
     renpy.pause()
-  File "game/scripts/mobile.rpy", line 1, in execute
-    screen mobile():
-  File "game/scripts/mobile.rpy", line 1, in execute
-    screen mobile():
-  File "game/scripts/mobile.rpy", line 2, in execute
-    imagebutton:
-  File "game/scripts/mobile.rpy", line 2, in keywords
-    imagebutton:
-Exception: ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?
-Stack was <Layer: 'transient'>
-<Many: <Fixed at 3fd9b90>>
+  File "game/scripts/mobile.rpy", line 15, in execute
+    screen screenStats():
+  File "game/scripts/mobile.rpy", line 15, in execute
+    screen screenStats():
+  File "game/scripts/mobile.rpy", line 16, in execute
+    imagemap:
+  File "game/scripts/mobile.rpy", line 20, in execute
+    bar:
+  File "game/scripts/mobile.rpy", line 20, in keywords
+    bar:
+NameError: name 'displayable' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 19, in script call
+  File "game/script.rpy", line 18, in script call
     call hotelRoom
   File "game/scripts/hotelRoom.rpy", line 9, in script
     pause
@@ -56,24 +56,20 @@ Full traceback:
     self.update()
   File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\screen.py", line 625, in update
     self.screen.function(**self.scope)
-  File "game/scripts/mobile.rpy", line 1, in execute
-    screen mobile():
-  File "game/scripts/mobile.rpy", line 1, in execute
-    screen mobile():
-  File "game/scripts/mobile.rpy", line 2, in execute
-    imagebutton:
-  File "game/scripts/mobile.rpy", line 2, in keywords
-    imagebutton:
-  File "<screen language>", line 6, in <module>
-  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\exports.py", line 1480, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward)
-  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\ui.py", line 291, in interact
-    raise Exception("ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?\nStack was "+('\n'.join([str(item) for item in stack])))
-Exception: ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?
-Stack was <Layer: 'transient'>
-<Many: <Fixed at 3fd9b90>>
+  File "game/scripts/mobile.rpy", line 15, in execute
+    screen screenStats():
+  File "game/scripts/mobile.rpy", line 15, in execute
+    screen screenStats():
+  File "game/scripts/mobile.rpy", line 16, in execute
+    imagemap:
+  File "game/scripts/mobile.rpy", line 20, in execute
+    bar:
+  File "game/scripts/mobile.rpy", line 20, in keywords
+    bar:
+  File "<screen language>", line 27, in <module>
+NameError: name 'displayable' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TimeNMoney 1.0
-Fri Oct 30 14:04:01 2020
+Sun Nov 01 16:53:20 2020
