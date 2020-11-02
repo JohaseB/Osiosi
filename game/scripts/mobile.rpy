@@ -18,29 +18,29 @@ screen screenStats():
             hover "stats_hover"
             hotspot(588, 611, 102, 41) action Hide("screenStats")
             bar:
-                value strength
-                range 15
+                value VariableValue("strength",15)
+                range 17
                 left_bar "full_bar"
                 right_bar "empty_bar"
                 xysize(300,70)
                 align(0.575, 0.164)
             bar:
-                value intellect
-                range 15
+                value VariableValue("intellect",15)
+                range 17
                 left_bar "full_bar"
                 right_bar "empty_bar"
                 xysize(300,70)
                 align(0.575, 0.364)
             bar:
-                value dexterity
-                range 15
+                value VariableValue("dexterity",15)
+                range 17
                 left_bar "full_bar"
                 right_bar "empty_bar"
                 xysize(300,70)
                 align(0.575, 0.564)
             bar:
-                value charisma
-                range 15
+                value VariableValue("charisma",15)
+                range 17
                 left_bar "full_bar"
                 right_bar "empty_bar"
                 xysize(300,70)

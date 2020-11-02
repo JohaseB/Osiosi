@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/mobile.rpy", line 27: expected a keyword argument or end of line.
-    thumb_offset = 20
+File "game/scripts/mobile.rpy", line 21: u'VariableValue' is not a keyword argument or valid child for the bar statement.
+    VariableValue("x",15)
                  ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Nov 01 16:57:34 2020
+Sun Nov 01 22:38:04 2020

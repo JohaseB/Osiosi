@@ -15,9 +15,9 @@ While running game code:
     imagemap:
   File "game/scripts/mobile.rpy", line 20, in execute
     bar:
-  File "game/scripts/mobile.rpy", line 20, in keywords
-    bar:
-NameError: name 'displayable' is not defined
+  File "renpy/common/00barvalues.rpy", line 283, in get_adjustment
+    value = getattr(self.object, self.field)
+TypeError: getattr(): attribute name must be string
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -64,12 +64,15 @@ Full traceback:
     imagemap:
   File "game/scripts/mobile.rpy", line 20, in execute
     bar:
-  File "game/scripts/mobile.rpy", line 20, in keywords
-    bar:
-  File "<screen language>", line 27, in <module>
-NameError: name 'displayable' is not defined
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\sl2\sldisplayables.py", line 242, in sl2bar
+    return renpy.display.behavior.Bar(range, value, width, height, vertical=False, **properties)
+  File "C:\Users\user\Desktop\renpy-7.3.5-sdk\renpy\display\behavior.py", line 1676, in __init__
+    adjustment = value.get_adjustment()
+  File "renpy/common/00barvalues.rpy", line 283, in get_adjustment
+    value = getattr(self.object, self.field)
+TypeError: getattr(): attribute name must be string
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 TimeNMoney 1.0
-Sun Nov 01 16:53:20 2020
+Sun Nov 01 22:39:24 2020

@@ -11,8 +11,9 @@ label displayShowMap:
             idle "imagemap ground"
             hover "imagemap hover"
 
-            hotspot (44, 238, 93, 93) action Jump("hotel") alt "hotel"
+            hotspot (936, 460, 91, 89) action Jump("hotel") alt "hotel"
             hotspot (360, 62, 93, 93) action Jump("work") alt "work"
+            hotspot (46, 241, 89, 89) action Jump("gymlabel") alt "gymlabel"
 
     label showMap:
         call screen showMap
@@ -22,3 +23,6 @@ label displayShowMap:
 
     label work:
         jump workplace
+
+    label gymlabel:
+        jump gym
