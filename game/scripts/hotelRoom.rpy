@@ -3,7 +3,7 @@ label hotelRoom:
     with dissolve
     show sylvie green normal
     with dissolve
-    s"This place is so chimba, parce-kun pendejo"
+    s"This place is so "
     window hide
     while True:
         pause
